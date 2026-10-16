@@ -6,5 +6,9 @@ namespace Csomagszállító_Futárszolgálat_Rendszer
 {
     public static class UzemanyagKalkulator
     {
+        public static double BecsultUzemanyagKoltseg(int osszKm) 
+        {
+            return osszKm * 0.08 * 600;
+        }
     }
 }
