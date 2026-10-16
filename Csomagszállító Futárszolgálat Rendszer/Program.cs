@@ -7,7 +7,10 @@ if (File.Exists("Csomagok.txt"))
     foreach(string sor in File.ReadAllLines("csomagok.txt"))
     {
         string[] adatok = sor.Split(';');
-        int db = sor.Count();
-        if db<3
+        int db = adatok.Count();
+        if (db < 3) continue;
+        
+       
+         
     }
 }
